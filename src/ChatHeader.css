@@ -1,0 +1,19 @@
+.chatheader{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #1d2339;
+    color: #e7e8eb;
+    padding: 1.25rem;
+}
+h3{
+    font-size: medium;
+}
+.pipe{
+    color: #3d4255;
+    padding: 0rem 1.25rem;
+}
+.chatheader h4{
+    font-size: small;
+    color: #a1a1a2;
+}
