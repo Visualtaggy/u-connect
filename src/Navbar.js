@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import NavbarChannel from "./NavbarChannel";
 
 function Navbar() {
   return (
@@ -17,6 +18,10 @@ function Navbar() {
             <ExpandMoreIcon />
           </div>
         </div>
+      </div>
+
+      <div className="navbar_channels-list">
+        <NavbarChannel />
       </div>
     </div>
   );
