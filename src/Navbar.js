@@ -11,6 +11,10 @@ function Navbar() {
         <ExpandMoreIcon />
       </div>
 
+      <div className="navbar_banner">
+        <img src="https://cdn.donmai.us/original/57/c2/__jesse_faden_control_drawn_by_kousfield__57c254123e8219ceb4773ca31ec54706.jpg" alt="" />
+      </div>
+
       <div className="navbar_all-channels">
         <div className="all-channels-header">
           <div className="navbar_header">

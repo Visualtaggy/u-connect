@@ -7,7 +7,6 @@
 }
 .navbar_top-area{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 1.25rem;
     background-color: #1d2339;
@@ -19,4 +18,11 @@
     padding: 1.25rem;
     align-items: center;
     color: #e7e8eb;
+}
+.navbar_banner{
+    min-width: 100%;
+}
+.navbar_banner img{
+    max-height: 100%;
+    max-width: 100%;
 }
