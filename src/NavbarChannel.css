@@ -1,0 +1,15 @@
+.channel-highlight{
+    display: flex;
+    padding: 1.25rem;
+}
+
+.navbarChannel{
+    padding: 0rem 1.25rem;
+    color: #61656f
+}
+
+.navbarChannel:hover  {
+    color: white;
+    background-color: #252b41;
+    border-radius: 1.25rem;
+}
