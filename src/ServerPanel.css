@@ -15,9 +15,35 @@
     color:  #e7e8eb;
 }
 .server_settings-icons{
+    display: flex;
     padding: 10px;
-    /* align-items: center; */
+    /* background-color: red; */
     margin-left: 20px;
-    /* display: flex; */
-    /* flex: 1%; */
+    flex: 1;
+    justify-content: flex-end;
+}
+.servercontrols{
+    /* background-color: aqua; */
+    flex:1.1;
+    padding: 4px;
+}
+
+.icon-bg{
+    border-radius: 100%;
+    background-color: #35b575;
+    margin-right: 10px;
+    
+}
+.serverlist{
+    flex: 8;
+    display: flex;
+    align-items: center;
+    color:  #e7e8eb;
+}
+.serverlist .servericon > p {
+    color: #319f6c;
+}
+.servericon{
+    flex: 1;
+    padding-left: 10px;
 }
