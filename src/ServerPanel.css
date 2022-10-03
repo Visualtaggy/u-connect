@@ -38,6 +38,7 @@
     display: flex;
     align-items: center;
     color:  #e7e8eb;
+    /* background-color: royalblue; */
 }
 .serverlist .servericon > p {
     color: #319f6c;
@@ -45,4 +46,8 @@
 .servericon{
     flex: 1;
     padding-left: 10px;
+}
+.serverdetails{
+    display: flex;
+    padding-right: 50px;
 }

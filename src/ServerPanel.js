@@ -33,10 +33,52 @@ function ServerPanel() {
       </div>
 
       <div className="serverlist">
-        <Avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7-rbuynVJLw2NkD37YF9nqIJLkrKusAUWJg&usqp=CAU" />
-        <div className="servericon">
-          <h4>Cyberpunk 2077</h4>
-          <p>32 Online</p>
+        <div className="serverdetails">
+          <Avatar src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7-rbuynVJLw2NkD37YF9nqIJLkrKusAUWJg&usqp=CAU" />
+          <div className="servericon">
+            <h4>Cyberpunk 2077</h4>
+            <p>32 Online</p>
+          </div>
+        </div>
+
+        <div className="serverdetails">
+          <Avatar src="https://www.riotgames.com/darkroom/1440/d0807e131a84f2e42c7a303bda672789:3d02afa7e0bfb75f645d97467765b24c/valorant-offwhitelaunch-keyart.jpg" />
+          <div className="servericon">
+            <h4>Valorant</h4>
+            <p>11297 Online</p>
+          </div>
+        </div>
+
+        <div className="serverdetails">
+          <Avatar src="https://preview.redd.it/ybetk1w9s9761.jpg?width=640&crop=smart&auto=webp&s=d406d274376068d97b0d2ba544c9345b80b5d28d" />
+          <div className="servericon">
+            <h4>Portal 2</h4>
+            <p>56 Online</p>
+          </div>
+        </div>
+
+        <div className="serverdetails">
+          <Avatar src="https://c4.wallpaperflare.com/wallpaper/563/416/847/call-of-duty-call-of-duty-black-ops-iii-call-of-duty-black-ops-iii-logo-wallpaper-preview.jpg" />
+          <div className="servericon">
+            <h4>Call of Duty</h4>
+            <p>2525 Online</p>
+          </div>
+        </div>
+
+        <div className="serverdetails">
+          <Avatar src="https://static.displate.com/280x392/displate/2021-11-23/258bd99c4dba3d7711e4884b8d8a3fda_c678608d980c649549e5f0c07dc50f8e.jpg" />
+          <div className="servericon">
+            <h4>Assassin's Creed</h4>
+            <p>666 Online</p>
+          </div>
+        </div>
+
+        <div className="serverdetails">
+          <Avatar src="https://i.pinimg.com/originals/9a/77/db/9a77db0d3793bb8c4170658776d948c8.jpg" />
+          <div className="servericon">
+            <h4>Grand Theft Auto</h4>
+            <p>10692 Online</p>
+          </div>
         </div>
       </div>
     </div>
