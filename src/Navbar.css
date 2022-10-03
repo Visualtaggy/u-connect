@@ -10,9 +10,13 @@
     align-items: center;
     padding: 1.25rem;
     background-color: #1d2339;
-    color: #e7e8eb;
+    color: #5c5e63;
     border-bottom: 3px solid #1a1f33;
 }
+.navbar_top-area h3{
+    color: #e7e8eb;
+}
+
 .navbar_header{
     display: flex;
     padding: 1.25rem;
