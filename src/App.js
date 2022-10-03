@@ -3,11 +3,12 @@ import "./App.css";
 import Chat from "./Chat";
 import Navbar from "./Navbar";
 import Online from "./Online";
+import ServerPanel from "./ServerPanel";
 
 function App() {
   return (
     <div className="app">
-      {/* <h1>PlaceHolder</h1> */}
+      <ServerPanel />
 
       <div className="main">
         {/* nav bar area*/}
