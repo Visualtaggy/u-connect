@@ -2,6 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import NavbarChannel from "./NavbarChannel";
+import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 
 function Navbar() {
   return (
@@ -12,7 +13,15 @@ function Navbar() {
       </div>
 
       <div className="navbar_banner">
-        <img src="https://cdn.donmai.us/original/57/c2/__jesse_faden_control_drawn_by_kousfield__57c254123e8219ceb4773ca31ec54706.jpg" alt="" />
+        <img
+          src="https://cdn.donmai.us/original/57/c2/__jesse_faden_control_drawn_by_kousfield__57c254123e8219ceb4773ca31ec54706.jpg"
+          alt=""
+        />
+      </div>
+
+      <div className="search_container">
+        <SearchRoundedIcon />
+        <input placeholder="Search" />
       </div>
 
       <div className="navbar_all-channels">
