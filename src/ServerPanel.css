@@ -1,8 +1,9 @@
 .serverPanel{
     background-color: #141a31;
     color: #525663;
-    padding: 1.25rem;
+    padding: 10px;
     display: flex;
+    align-items: center;
 }
 .server_profile{
     display: flex;
@@ -45,9 +46,21 @@
 }
 .servericon{
     flex: 1;
-    padding-left: 10px;
+;
 }
 .serverdetails{
     display: flex;
-    padding-right: 50px;
+    padding-right: 8px;
+}
+
+.element-highlight{
+    display: flex;
+    padding: 4px 20px;
+    border-radius: 20px;
+}
+.element-highlight:hover{
+    display: flex;
+    padding: 4px 20px;
+    background-color: #1e253b;
+    border-radius: 20px;
 }
