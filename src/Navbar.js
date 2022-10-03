@@ -3,6 +3,7 @@ import "./Navbar.css";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import NavbarChannel from "./NavbarChannel";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
+import NavbarVoiceChannel from "./NavbarVoiceChannel";
 
 function Navbar() {
   return (
@@ -38,6 +39,7 @@ function Navbar() {
       </div>
 
       <br />
+
       <div className="navbar_all-channels">
         <div className="all-channels-header">
           <div className="navbar_header">
@@ -45,6 +47,10 @@ function Navbar() {
             <ExpandMoreIcon />
           </div>
         </div>
+      </div>
+
+      <div className="navbar_channels-list">
+        <NavbarVoiceChannel />
       </div>
     </div>
   );
