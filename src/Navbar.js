@@ -36,6 +36,16 @@ function Navbar() {
       <div className="navbar_channels-list">
         <NavbarChannel />
       </div>
+
+      <br />
+      <div className="navbar_all-channels">
+        <div className="all-channels-header">
+          <div className="navbar_header">
+            <h4>Voice Chat</h4>
+            <ExpandMoreIcon />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

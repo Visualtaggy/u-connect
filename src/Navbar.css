@@ -21,8 +21,12 @@
     display: flex;
     padding: 1.25rem;
     align-items: center;
+    color: #5c5e63;
+}
+.navbar_all-channels .all-channels-header .navbar_header > h4 {
     color: #e7e8eb;
 }
+
 .navbar_banner{
     min-width: 100%;
 }
