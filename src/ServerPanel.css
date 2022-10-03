@@ -1,0 +1,8 @@
+.serverPanel{
+    background-color: #141a31;
+    color: white;
+    padding: 1.25rem;
+}
+.server_profile{
+    display: flex;
+}
