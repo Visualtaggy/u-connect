@@ -13,15 +13,15 @@ function Chat() {
       <div className="chat_input">
         <AddCircleIcon fontSize="large" />
         <form action="">
-          <input placeholder="{MESSAGE SENT!}" />
+          <input placeholder="Message #General" />
           <button className="chatinput_area" type="submit">
             Send Message
           </button>
         </form>
-      </div>
 
-      <div className="chatinput_icons">
-        <EmojiEmotionsIcon fontSize="large" />
+        <div className="chatinput_icons">
+          <EmojiEmotionsIcon fontSize="large" />
+        </div>
       </div>
     </div>
   );
