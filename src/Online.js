@@ -10,6 +10,13 @@ function Online() {
         <AlternateEmailIcon />
         <FlagIcon />
       </div>
+
+      <div className="online_user-category">
+        <div className="user-details">
+          <h4>Moderators</h4>
+          <p>3 Online</p>
+        </div>
+      </div>
     </div>
   );
 }

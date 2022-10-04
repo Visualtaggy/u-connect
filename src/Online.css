@@ -14,3 +14,11 @@
         justify-content: flex-start;
         color: #494e60;
 }
+.online_user-category{
+        display: flex;
+        align-items: center;
+        padding: 1.25rem;
+}
+.user-details > p{
+        color: #494e60;
+}
