@@ -1,0 +1,16 @@
+.message{
+    display: flex;
+    padding: 20px;
+    color: #cacbcd;
+}
+.message .message_info > h4{
+    color: #ffffff;
+}
+.message_info{
+    margin-left: 20px;
+}
+.message_timestamps{
+    color: #8d8e91;
+    margin-left: 20px;
+    font-size: x-small;
+}

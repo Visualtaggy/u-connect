@@ -5,12 +5,13 @@ function Message() {
   return (
     <div className="message">
       <Avatar />
-      <div className="message-details">
+      <div className="message_info">
         <h4>
           visualtaggy
-          <span className="timestamp">11:30pm</span>
+          <span className="message_timestamps">timestamp goes here</span>
         </h4>
-        <p>This is a dummy message !</p>
+
+        <p>Message content goes here</p>
       </div>
     </div>
   );
