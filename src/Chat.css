@@ -28,3 +28,6 @@
 .chat_input form {
     flex: 1;
 }
+.chatinput_area{
+    display: none;
+}
