@@ -8,8 +8,7 @@ function Chat() {
   return (
     <div className="chat">
       <ChatHeader />
-      <div className="chat_messages">{/* chat pop up goes here  */}</div>
-
+      <div className="chat__messages"></div>
       <div className="chat_input">
         <AddCircleIcon fontSize="large" />
         <form action="">

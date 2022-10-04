@@ -1,4 +1,6 @@
 .chat{
+    display: flex;
+    flex-direction: column;
     background-color: #1e253b;
     flex: 0.60;
 }
@@ -30,4 +32,8 @@
 }
 .chatinput_area{
     display: none;
+}
+.chat__messages{
+    display: flex;
+    flex: 1;
 }
