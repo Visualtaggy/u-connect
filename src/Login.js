@@ -7,9 +7,12 @@ import land from "./imgs/lower.png";
 function Login() {
   useEffect(() => {
     let stars = document.getElementById("stars");
+    let moon = document.getElementById("moon");
+
     window.addEventListener("scroll", function () {
       let value = window.scrollY;
       stars.style.top = "-" + value + "px";
+      moon.style.top = value * 1.05 + "px";
     });
   });
 
