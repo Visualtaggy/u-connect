@@ -131,3 +131,7 @@ section img{
     font-size: 1.2rem;
     color: #fff;
 }
+
+.Btn , #text{
+    margin-bottom: 150px;
+}
