@@ -4,6 +4,7 @@ import Chat from "./Chat";
 import Navbar from "./Navbar";
 import Online from "./Online";
 import ServerPanel from "./ServerPanel";
+import Login from "./Login";
 
 import { useSelector } from "react-redux";
 import { selectUser } from "./features/userSlice";
@@ -28,7 +29,7 @@ function App() {
           </div>
         </>
       ) : (
-        <h2>Login Page Placeholder!</h2>
+        <Login />
       )}
     </div>
   );
