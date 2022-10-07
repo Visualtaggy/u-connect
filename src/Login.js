@@ -9,12 +9,14 @@ function Login() {
     let stars = document.getElementById("stars");
     let moon = document.getElementById("moon");
     let mountain = document.getElementById("mid");
+    let message = document.getElementById("text");
 
     window.addEventListener("scroll", function () {
       let value = window.scrollY;
       stars.style.left = "-" + value * 0.25 + "px";
       moon.style.top = value * 1.05 + "px";
       mountain.style.top = "-" + value * 0.25 + "px";
+      message.style.marginRight = value * 5 + "px";
     });
   });
 
