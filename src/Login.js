@@ -4,9 +4,11 @@ import starImg from "./imgs/stars.png";
 import moonImg from "./imgs/moon.png";
 import midImg from "./imgs/mid.png";
 import land from "./imgs/lower.png";
+import { auth, provider } from "./firebase";
+
 function Login() {
   const siginIn = (e) => {
-    alert("Login Logic Sanity Check!");
+    auth.signInWithPopup(provider).catch((error) => alert(error.message));
   };
 
   useEffect(() => {
