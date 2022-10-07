@@ -94,7 +94,7 @@ section img{
 #mid{
     height: auto;
     z-index: 11;
-    margin-top: 15vh;
+    margin-top: 10vh;
 
 }
 #text{
@@ -117,6 +117,7 @@ section img{
     transform: translateY(100px);
 }
 .sec{
+    z-index: 12;
     position: relative;
     padding: 100px;
     background: #1c0522;

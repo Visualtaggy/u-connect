@@ -12,7 +12,7 @@ function Login() {
 
     window.addEventListener("scroll", function () {
       let value = window.scrollY;
-      stars.style.top = "-" + value + "px";
+      stars.style.left = "-" + value * 0.25 + "px";
       moon.style.top = value * 1.05 + "px";
       mountain.style.top = "-" + value * 0.25 + "px";
     });
