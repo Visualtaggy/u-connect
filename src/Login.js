@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Login.css";
 import starImg from "./imgs/stars.png";
 import moonImg from "./imgs/moon.png";
 import midImg from "./imgs/mid.png";
 import land from "./imgs/lower.png";
 function Login() {
+  useEffect(() => {
+    let stars = document.getElementById("stars");
+    window.addEventListener("scroll", function () {
+      let value = window.scrollY;
+      stars.style.top = "-" + value + "px";
+    });
+  });
+
   return (
     <div>
       <header>
