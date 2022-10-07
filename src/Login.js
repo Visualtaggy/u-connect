@@ -10,6 +10,7 @@ function Login() {
     let moon = document.getElementById("moon");
     let mountain = document.getElementById("mid");
     let message = document.getElementById("text");
+    let button = document.getElementById("login-button");
 
     window.addEventListener("scroll", function () {
       let value = window.scrollY;
@@ -17,6 +18,9 @@ function Login() {
       moon.style.top = value * 1.05 + "px";
       mountain.style.top = "-" + value * 0.25 + "px";
       message.style.marginRight = value * 11 + "px";
+      message.style.marginTop = value * 11 + "px";
+      message.style.marginTop = value * 1.5 + "px";
+      button.style.marginTop = value * 1.5 + "px";
     });
   });
 
@@ -40,7 +44,7 @@ function Login() {
         <img src={moonImg} id="moon" />
         <img src={midImg} id="mid" />
         <h2 id="text">Welcome To Jinx</h2>
-        <a href="#" className="Btn">
+        <a href="#" className="Btn" id="login-button">
           Login
         </a>
         <img src={land} id="land" />
