@@ -5,21 +5,31 @@ import Navbar from "./Navbar";
 import Online from "./Online";
 import ServerPanel from "./ServerPanel";
 
+import { useSelector } from "react-redux";
+import { selectUser } from "./features/userSlice";
+
 function App() {
+  const user = useSelector(selectUser);
   return (
     <div className="app">
-      <ServerPanel />
+      {user ? (
+        <>
+          <ServerPanel />
 
-      <div className="main">
-        {/* nav bar area*/}
-        <Navbar />
+          <div className="main">
+            {/* nav bar area*/}
+            <Navbar />
 
-        {/* chat area*/}
-        <Chat />
+            {/* chat area*/}
+            <Chat />
 
-        {/* online area*/}
-        <Online />
-      </div>
+            {/* online area*/}
+            <Online />
+          </div>
+        </>
+      ) : (
+        <h2>Login Page Placeholder!</h2>
+      )}
     </div>
   );
 }
