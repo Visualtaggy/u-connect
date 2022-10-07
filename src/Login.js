@@ -5,6 +5,10 @@ import moonImg from "./imgs/moon.png";
 import midImg from "./imgs/mid.png";
 import land from "./imgs/lower.png";
 function Login() {
+  const siginIn = (e) => {
+    alert("Login Logic Sanity Check!");
+  };
+
   useEffect(() => {
     let stars = document.getElementById("stars");
     let moon = document.getElementById("moon");
@@ -44,7 +48,7 @@ function Login() {
         <img src={moonImg} id="moon" />
         <img src={midImg} id="mid" />
         <h2 id="text">Welcome To Jinx</h2>
-        <a href="#" className="Btn" id="login-button">
+        <a onClick={siginIn} className="Btn" id="login-button">
           Login
         </a>
         <img src={land} id="land" />
