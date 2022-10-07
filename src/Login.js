@@ -16,7 +16,7 @@ function Login() {
       stars.style.left = "-" + value * 0.25 + "px";
       moon.style.top = value * 1.05 + "px";
       mountain.style.top = "-" + value * 0.25 + "px";
-      message.style.marginRight = value * 5 + "px";
+      message.style.marginRight = value * 11 + "px";
     });
   });
 
