@@ -51,6 +51,7 @@ header ul li:hover, .active{
     background: #fff;
     color: #2b1055;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 section{
@@ -134,4 +135,7 @@ section img{
 
 .Btn , #text{
     margin-bottom: 150px;
+}
+.Btn:hover{
+    cursor: pointer;
 }
