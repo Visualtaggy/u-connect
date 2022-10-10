@@ -8,6 +8,7 @@ import AddCircleIcon from "@mui/icons-material/AddCircle";
 import ExploreIcon from "@mui/icons-material/Explore";
 import { selectUser } from "./features/userSlice";
 import { useSelector } from "react-redux";
+import { auth } from "./firebase";
 
 function ServerPanel() {
   const user = useSelector(selectUser);
@@ -15,7 +16,7 @@ function ServerPanel() {
   return (
     <div className="serverPanel">
       <div className="server_profile">
-        <Avatar src={user.photo} />
+        <Avatar onClick={() => auth.signOut()} src={user.photo} />
         <div className="server_profileinfo">
           <h3>{user.displayName}</h3>
           <p>#{user.uid.substring(0, 5)}</p>
