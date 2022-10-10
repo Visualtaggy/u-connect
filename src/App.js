@@ -29,9 +29,10 @@ function App() {
         );
       } else {
         //Logged Out User
+        dispath(logout());
       }
     });
-  }, []);
+  }, [dispath]);
 
   return (
     <div className="app">
