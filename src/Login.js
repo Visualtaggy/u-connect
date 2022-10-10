@@ -34,7 +34,7 @@ function Login() {
     <div>
       <header>
         <a href="#" className="logo">
-          Jinx
+          Jinx&reg;
         </a>
 
         <ul>
@@ -49,7 +49,7 @@ function Login() {
         <img src={starImg} id="stars" />
         <img src={moonImg} id="moon" />
         <img src={midImg} id="mid" />
-        <h2 id="text">Welcome To Jinx</h2>
+        <h2 id="text">Welcome To Jinx&reg;</h2>
         <a onClick={siginIn} className="Btn" id="login-button">
           Login
         </a>
