@@ -8,11 +8,20 @@ import AddCircleIcon from "@mui/icons-material/AddCircle";
 import ExploreIcon from "@mui/icons-material/Explore";
 import { selectUser } from "./features/userSlice";
 import { useSelector } from "react-redux";
-import { auth } from "./firebase";
+import db, { auth } from "./firebase";
 
 function ServerPanel() {
   const user = useSelector(selectUser);
 
+  const addChannel = () => {
+    const channelName = prompt("Enter new channel name here");
+
+    if (channelName) {
+      db.collection("channels").add({
+        channelName: channelName,
+      });
+    }
+  };
   return (
     <div className="serverPanel">
       <div className="server_profile">
@@ -33,7 +42,11 @@ function ServerPanel() {
       <div className="servercontrols">
         <div className="icon">
           <ExploreIcon fontSize="large" className="icon-bg" />
-          <AddCircleIcon fontSize="large" className="icon-bg" />
+          <AddCircleIcon
+            onClick={addChannel}
+            fontSize="large"
+            className="icon-bg"
+          />
         </div>
       </div>
 
