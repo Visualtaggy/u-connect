@@ -6,15 +6,19 @@ import NotificationsRoundedIcon from "@mui/icons-material/NotificationsRounded";
 import GroupRoundedIcon from "@mui/icons-material/GroupRounded";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import ExploreIcon from "@mui/icons-material/Explore";
+import { selectUser } from "./features/userSlice";
+import { useSelector } from "react-redux";
 
 function ServerPanel() {
+  const user = useSelector(selectUser);
+
   return (
     <div className="serverPanel">
       <div className="server_profile">
-        <Avatar src="https://avatars.githubusercontent.com/u/57157497?v=4" />
+        <Avatar src={user.photo} />
         <div className="server_profileinfo">
-          <h3>visualtaggy</h3>
-          <p>#1011</p>
+          <h3>{user.displayName}</h3>
+          <p>#{user.uid.substring(0, 5)}</p>
         </div>
       </div>
 
