@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import NavbarChannel from "./NavbarChannel";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import NavbarVoiceChannel from "./NavbarVoiceChannel";
-
+import { useSelector } from "react-redux";
+import { selectUser } from "./features/userSlice";
+import db from "./firebase";
 function Navbar() {
+  const user = useSelector(selectUser);
+  const [channels, setChannels] = useState([]);
+
+  useEffect(() => {
+    db.collection("channels").onSnapshot((snapshot) =>
+      setChannels(
+        snapshot.docs.map((doc) => ({
+          id: doc.id,
+          channel: doc.data(),
+        }))
+      )
+    );
+  }, []);
+
   return (
     <div className="navbar">
       <div className="navbar_top-area">
@@ -35,7 +51,9 @@ function Navbar() {
       </div>
 
       <div className="navbar_channels-list">
-        <NavbarChannel />
+        {channels.map(({ id, channel }) => (
+          <NavbarChannel key={id} id={id} channelName={channel.channelName} />
+        ))}
       </div>
 
       <br />
