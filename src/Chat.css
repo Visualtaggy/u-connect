@@ -34,6 +34,5 @@
     display: none;
 }
 .chat__messages{
-    display: flex;
     flex: 1;
 }
