@@ -43,9 +43,9 @@ function Chat() {
     <div className="chat">
       <ChatHeader channelName={channelname} />
       <div className="chat__messages">
-        {messages.map((message) => {
-          <Message />;
-        })}
+        {messages.map((message) => (
+          <Message />
+        ))}
       </div>
       <div className="chat_input">
         <AddCircleIcon fontSize="large" />
