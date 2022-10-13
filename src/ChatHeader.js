@@ -1,10 +1,10 @@
 import React from "react";
 import "./ChatHeader.css";
 
-function ChatHeader() {
+function ChatHeader({ channelName }) {
   return (
     <div className="chatheader">
-      <h3>General</h3>
+      <h3>{channelName}</h3>
       <div className="pipe">|</div>
       <h4>
         Everyone should be familiar with this world,It's the one that always
