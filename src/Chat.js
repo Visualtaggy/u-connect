@@ -4,11 +4,18 @@ import ChatHeader from "./ChatHeader";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
 import Message from "./Message";
+import { useSelector } from "react-redux";
+import { selectChannelID, selectChannelName } from "./features/appSlice";
+import { selectUser } from "./features/userSlice";
 
 function Chat() {
+  const channelid = useSelector(selectChannelID);
+  const user = useSelector(selectUser);
+  const channelname = useSelector(selectChannelName);
+
   return (
     <div className="chat">
-      <ChatHeader />
+      <ChatHeader channelName={channelname}/>
       <div className="chat__messages">
         <Message />
         <Message />
