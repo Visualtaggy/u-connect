@@ -13,7 +13,7 @@ function Message({ timestamp, user, message }) {
           </span>
         </h4>
 
-        <p>Message content goes here</p>
+        <p>{message}</p>
       </div>
     </div>
   );
