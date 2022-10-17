@@ -9,13 +9,18 @@ import ExploreIcon from "@mui/icons-material/Explore";
 import { selectUser } from "./features/userSlice";
 import { useSelector } from "react-redux";
 import db, { auth } from "./firebase";
+import Popup from "./Popup";
+import { useState } from "react";
 
 function ServerPanel() {
+  const [buttonPopup, setButtonPopup] = useState(false);
   const user = useSelector(selectUser);
 
+  function displayPopup(params) {
+    setButtonPopup(true);
+  }
   const addChannel = () => {
     const channelName = prompt("Enter new channel name here");
-
     if (channelName) {
       db.collection("channels").add({
         channelName: channelName,
@@ -43,7 +48,11 @@ function ServerPanel() {
         <div className="icon">
           <ExploreIcon fontSize="large" className="icon-bg" />
           <AddCircleIcon
-            onClick={addChannel}
+            // onClick={addChannel}
+            onClick={function (event) {
+              addChannel();
+              displayPopup();
+            }}
             fontSize="large"
             className="icon-bg"
           />
@@ -100,6 +109,15 @@ function ServerPanel() {
             </div>
           </div>
         </div>
+
+        <Popup trigger={buttonPopup} setTrigger={setButtonPopup}>
+          <h2>Create Channel</h2>
+          <p>in text channel</p>
+          <h3>CHANNEL NAME</h3>
+          <div className="channel-input">
+            <input type="text" />
+          </div>
+        </Popup>
       </div>
     </div>
   );
