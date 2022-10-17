@@ -3,6 +3,7 @@
     flex-direction: column;
     background-color: #1e253b;
     flex: 0.60;
+    max-height: 100vh;
 }
 .chat_input{
     display: flex;
@@ -35,4 +36,12 @@
 }
 .chat__messages{
     flex: 1;
+    overflow:scroll;
+}
+.chat__messages::-webkit-scrollbar{
+    display: none;
+}
+.chat__messages{
+ -ms-overflow-style: none;
+ scrollbar-width: none;
 }
