@@ -117,6 +117,9 @@ function ServerPanel() {
           <div className="channel-input">
             <input type="text" />
           </div>
+          <div className="create-btn">
+            <button>Create Channel</button>
+          </div>
         </Popup>
       </div>
     </div>
