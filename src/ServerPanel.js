@@ -14,17 +14,20 @@ import { useState } from "react";
 
 function ServerPanel() {
   const [buttonPopup, setButtonPopup] = useState(false);
+  const [input, setInput] = useState("");
   const user = useSelector(selectUser);
 
   function displayPopup(params) {
     setButtonPopup(true);
   }
   const addChannel = () => {
-    const channelName = prompt("Enter new channel name here");
+    const channelName = input;
+
     if (channelName) {
       db.collection("channels").add({
         channelName: channelName,
       });
+      setInput("");
     }
   };
   return (
@@ -48,9 +51,7 @@ function ServerPanel() {
         <div className="icon">
           <ExploreIcon fontSize="large" className="icon-bg" />
           <AddCircleIcon
-            // onClick={addChannel}
             onClick={function (event) {
-              addChannel();
               displayPopup();
             }}
             fontSize="large"
@@ -115,10 +116,14 @@ function ServerPanel() {
           <p>in text channel</p>
           <h3>CHANNEL NAME</h3>
           <div className="channel-input">
-            <input type="text" />
+            <input
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              placeholder={`new-channel`}
+            />
           </div>
           <div className="create-btn">
-            <button>Create Channel</button>
+            <button onClick={addChannel}>Create Channel</button>
           </div>
         </Popup>
       </div>
